@@ -20,14 +20,14 @@ except ImportError:
     import tkinter.ttk as ttk
     py3 = True
 
-import qsamsaylasthai_support
+import MoviesTable_support
 
 def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
     root = Tk()
     top = New_Toplevel (root)
-    qsamsaylasthai_support.init(root, top)
+    MoviesTable_support.init(root, top)
     root.mainloop()
 
 w = None
@@ -37,7 +37,7 @@ def create_New_Toplevel(root, *args, **kwargs):
     rt = root
     w = Toplevel (root)
     top = New_Toplevel (w)
-    qsamsaylasthai_support.init(w, top, *args, **kwargs)
+    MoviesTable_support.init(w, top, *args, **kwargs)
     return (w, top)
 
 def destroy_New_Toplevel():
