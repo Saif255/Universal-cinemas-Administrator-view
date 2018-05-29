@@ -33,7 +33,7 @@ def destroy_window():
     top_level = None
 
 if __name__ == '__main__':
-    import qsamsaylasthai
-    qsamsaylasthai.vp_start_gui()
+    import MoviesTable
+    MoviesTable.vp_start_gui()
 
 
